@@ -1,4 +1,4 @@
-# read me
+# Redditoor
 
 using multion to find all the commenters under a given reddit post, and DMing a message to them.
 
