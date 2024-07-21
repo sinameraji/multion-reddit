@@ -84,4 +84,4 @@ completion = client.chat.completions.create(
 if completion.choices[0].message.content == "True":
     scrape_profiles(scraped_posts[0]["thread_url"])
 else:
-    print("NO")
+    print("this search query didn't lead help us find the best thread. try another search query by re-reunning discover.py")
