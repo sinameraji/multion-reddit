@@ -1,10 +1,14 @@
 from multion.client import MultiOn
 import os
 import json
+from dm_commenters import dm_profiles
+from dotenv import load_dotenv
+
 
 
 def scrape_profiles(thread_url=None):
     if not thread_url:
+        load_dotenv()
         thread_url = os.getenv("POST_URL")
     
     client = MultiOn(api_key=os.getenv("MULTION_API_KEY"))
@@ -64,4 +68,6 @@ def scrape_profiles(thread_url=None):
         json.dump({'profiles': user_profiles}, json_file, indent=4)
 
     print("User profiles JSON file has been created.")
+
+    dm_profiles(user_profiles)
 
