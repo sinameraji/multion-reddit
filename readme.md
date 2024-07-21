@@ -8,8 +8,10 @@ using multion to find all the commenters under a given reddit post, and DMing a 
 3. run scrape.py to scrape reddit commenters under the post
 4. run dm.py to send dms to scraped users
 
-## known issue
-> discover.py isnt working as expected, 
+## work in progress
+1. search_query_generator.py (done): creating a search query generator that can generates many search queries given a seed phrase
+2. discover.py (in progress): use the AI generated search queries to find the hottest posts
+
 
 ## next iterations
 * use anon.com to programmatically log the user into reddit
