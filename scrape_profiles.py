@@ -71,3 +71,4 @@ def scrape_profiles(thread_url=None):
 
     dm_profiles(user_profiles)
 
+scrape_profiles()
